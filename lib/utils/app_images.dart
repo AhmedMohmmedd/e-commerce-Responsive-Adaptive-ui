@@ -1,9 +1,17 @@
 class Assets {
   Assets._();
   
+  /// Assets for imagesAdd
+  /// assets/images/add.svg
+  static const String imagesAdd = "assets/images/add.svg";
+
   /// Assets for imagesAppleAirPodspro
   /// assets/images/appleAirPodspro.svg
   static const String imagesAppleAirPodspro = "assets/images/appleAirPodspro.svg";
+
+  /// Assets for imagesBackground
+  /// assets/images/background.svg
+  static const String imagesBackground = "assets/images/background.svg";
 
   /// Assets for imagesBeatsSolo3Wireless
   /// assets/images/beatsSolo3Wireless.svg
@@ -96,5 +104,9 @@ class Assets {
   /// Assets for imagesSoundix2
   /// assets/images/soundix2.svg
   static const String imagesSoundix2 = "assets/images/soundix2.svg";
+
+  /// Assets for imagesVector
+  /// assets/images/Vector.svg
+  static const String imagesVector = "assets/images/Vector.svg";
 }
 
