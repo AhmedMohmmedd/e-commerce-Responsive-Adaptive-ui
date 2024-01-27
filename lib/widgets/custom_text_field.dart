@@ -8,8 +8,7 @@ class CustomTextFiled extends StatelessWidget {
   final String hint;
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      
+    return TextField(   
       decoration: InputDecoration(
         prefixIcon:  SvgPicture.asset(Assets.imagesSearch ,fit: BoxFit.scaleDown,),
         suffixIcon: SvgPicture.asset(Assets.imagesList ,fit: BoxFit.scaleDown,),

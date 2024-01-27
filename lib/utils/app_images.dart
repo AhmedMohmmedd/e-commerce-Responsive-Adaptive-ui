@@ -97,6 +97,14 @@ class Assets {
   /// assets/images/ranig.svg
   static const String imagesRanig = "assets/images/ranig.svg";
 
+  /// Assets for imagesRectangle 9
+  /// assets/images/Rectangle 9.svg
+  static const String imagesRectangle9 = "assets/images/Rectangle 9.svg";
+
+  /// Assets for imagesSatrs
+  /// assets/images/satrs.svg
+  static const String imagesSatrs = "assets/images/satrs.svg";
+
   /// Assets for imagesSaved
   /// assets/images/saved.svg
   static const String imagesSaved = "assets/images/saved.svg";
