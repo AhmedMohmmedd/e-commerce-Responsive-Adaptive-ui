@@ -5,7 +5,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xFF5C5C5C),
       fontSize: getResponsiveFontSize(context, fontSize: 12),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w500,
     );
   }
@@ -14,7 +14,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xFF5B5959),
       fontSize: getResponsiveFontSize(context, fontSize: 18),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w500,
     );
   }
@@ -50,7 +50,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xFF009393),
       fontSize: getResponsiveFontSize(context, fontSize: 16),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w500,
     );
   }
@@ -68,7 +68,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xFF5C5C5C),
       fontSize: getResponsiveFontSize(context, fontSize: 14),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w500,
     );
   }
@@ -86,7 +86,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xFF5C5C5C),
       fontSize: getResponsiveFontSize(context, fontSize: 14),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w600,
     );
   }
@@ -104,7 +104,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xFF016170),
       fontSize: getResponsiveFontSize(context, fontSize: 12),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w600,
     );
   }
@@ -113,7 +113,7 @@ abstract class AppStyles {
     return TextStyle(
        color:  Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 26),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w500,
     );
   }
@@ -122,7 +122,7 @@ abstract class AppStyles {
     return TextStyle(
        color:  Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 16),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w400,
     );
   }
@@ -131,7 +131,7 @@ abstract class AppStyles {
     return TextStyle(
        color:  Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 20),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w500,
     );
   }
@@ -140,7 +140,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xFF5C5C5C),
       fontSize: getResponsiveFontSize(context, fontSize: 14),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w400,
     );
   }
@@ -149,7 +149,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xFF5C5C5C),
       fontSize: getResponsiveFontSize(context, fontSize: 12.5),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w400,
     );
   }
@@ -167,7 +167,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xFF016170),
       fontSize: getResponsiveFontSize(context, fontSize: 15),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w500,
     );
   }
@@ -176,7 +176,7 @@ abstract class AppStyles {
     return TextStyle(
        color: const Color(0xE5016170),
       fontSize: getResponsiveFontSize(context, fontSize: 26),
-      //fontFamily: 'Poppins',
+      fontFamily: 'Poppins',
       fontWeight: FontWeight.w600,
     );
   }
