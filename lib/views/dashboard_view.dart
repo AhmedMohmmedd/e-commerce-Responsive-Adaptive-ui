@@ -1,5 +1,6 @@
 import 'package:e_commerce_responsive_ui/widgets/adabtive_layout_widget.dart';
 import 'package:e_commerce_responsive_ui/widgets/dashboard_desktop_layout.dart';
+import 'package:e_commerce_responsive_ui/widgets/headPhone_section..dart';
 import 'package:flutter/material.dart';
 
 class DashBoardView extends StatefulWidget {
@@ -17,7 +18,7 @@ class _DashBoardViewState extends State<DashBoardView> {
       backgroundColor:const Color(0xFFFAFAFA),
       body: AdaptiveLayoutBulider(
           mobilelayout: (context) => const SizedBox(),
-          tabletLayout: (context) => const SizedBox(),
+          tabletLayout: (context) => const HeadphoneSection(),
           daskTopLayout: (context) =>const  DashboardDeskTopLayout()),
     );
   }
