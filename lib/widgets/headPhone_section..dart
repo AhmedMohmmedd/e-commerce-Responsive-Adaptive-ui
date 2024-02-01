@@ -1,5 +1,6 @@
 import 'package:e_commerce_responsive_ui/utils/app_images.dart';
 import 'package:e_commerce_responsive_ui/utils/app_styles.dart';
+import 'package:e_commerce_responsive_ui/widgets/beat_studio_section.dart';
 import 'package:e_commerce_responsive_ui/widgets/beats_studio_card.dart';
 import 'package:e_commerce_responsive_ui/widgets/head_phone_explore_popubler.dart';
 import 'package:e_commerce_responsive_ui/widgets/headphone_list_view.dart';
@@ -29,27 +30,14 @@ class HeadphoneSection extends StatelessWidget {
               children: [
                 Expanded(
                   flex: 3,
-                  child: Column(
-                    children: [
-                      BeatsStudioCard(),
-                      SizedBox(
-                        height: 50,
-                      ),
-                      HeadphoneListView(),
-                      SizedBox(
-                        height: 50,
-                      ),
-                      // HeadPhoneExplorePopular()
-                    ],
-                  ),
+                  child: BeatsStudioSection(),
                 ),
                 SizedBox(
                   width: 20,
                 ),
-                ///////////////////////////////////
                 Expanded(
                     flex: 2,
-                    child: SummerHeadPone()),
+                    child: SummerHeadPoneSection()),
               ],
             ),
           ],

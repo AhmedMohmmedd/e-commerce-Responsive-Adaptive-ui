@@ -1,5 +1,7 @@
 import 'package:e_commerce_responsive_ui/widgets/adabtive_layout_widget.dart';
 import 'package:e_commerce_responsive_ui/widgets/dashboard_desktop_layout.dart';
+import 'package:e_commerce_responsive_ui/widgets/dashboard_mobile_layout.dart';
+import 'package:e_commerce_responsive_ui/widgets/dashboard_tablet_layout.dart';
 import 'package:e_commerce_responsive_ui/widgets/headPhone_section..dart';
 import 'package:e_commerce_responsive_ui/widgets/soundix_section.dart';
 import 'package:flutter/material.dart';
@@ -27,8 +29,8 @@ class _DashBoardViewState extends State<DashBoardView> {
           : null,
       drawer: const SoundixSection(),
       body: AdaptiveLayoutBulider(
-          mobilelayout: (context) => const SizedBox(),
-          tabletLayout: (context) => const HeadphoneSection(),
+          mobilelayout: (context) => const DashboardMobileLayout(),
+          tabletLayout: (context) => const DashboardTabLetLayout(),
           daskTopLayout: (context) => const DashboardDeskTopLayout()),
     );
   }

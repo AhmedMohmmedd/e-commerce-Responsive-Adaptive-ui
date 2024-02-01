@@ -1,8 +1,15 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:e_commerce_responsive_ui/views/dashboard_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(
+      enabled: true,
+      builder: (context) => const MyApp(),
+    )
+    // const MyApp()
+    );
 }
 
 class MyApp extends StatelessWidget {
@@ -11,7 +18,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       

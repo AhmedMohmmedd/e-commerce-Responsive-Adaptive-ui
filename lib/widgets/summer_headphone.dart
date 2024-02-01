@@ -9,8 +9,8 @@ import 'package:e_commerce_responsive_ui/widgets/summer_headphone_header.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class SummerHeadPone extends StatelessWidget {
-  const SummerHeadPone({
+class SummerHeadPoneSection extends StatelessWidget {
+  const SummerHeadPoneSection({
     super.key,
   });
 

@@ -18,11 +18,19 @@ class HeadphoneSectionHeader extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Headphone',
-                  style: AppStyles.styleMedium26Poppins(context)
-                      .copyWith(color: Colors.black)),
-              Text('from top brands',
-                  style: AppStyles.styleRegular16Poppins(context)),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: AlignmentDirectional.centerStart,
+                child: Text('Headphone',
+                    style: AppStyles.styleMedium26Poppins(context)
+                        .copyWith(color: Colors.black)),
+              ),
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: AlignmentDirectional.centerStart,
+                child: Text('from top brands',
+                    style: AppStyles.styleRegular16Poppins(context)),
+              ),
             ],
           ),
         ),

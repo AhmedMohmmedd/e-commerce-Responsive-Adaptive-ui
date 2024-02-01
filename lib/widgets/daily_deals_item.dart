@@ -8,7 +8,7 @@ class DailyDealsItem extends StatelessWidget {
   final DailyDealsItemModel dailyDealsItemModel;
   @override
   Widget build(BuildContext context) {
-    return MediaQuery.sizeOf(context).width < 1010 ?
+    return MediaQuery.sizeOf(context).width < 1010 &&  MediaQuery.sizeOf(context).width < 400?
     Row(
       children: [
         SvgPicture.asset(dailyDealsItemModel.image),
