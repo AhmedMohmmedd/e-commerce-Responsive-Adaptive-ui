@@ -15,9 +15,11 @@ class SoundixSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
+        width: MediaQuery.sizeOf(context).width * .50,
         padding: const EdgeInsets.only(left: 10),
         color: Colors.white,
         child: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
              SizedBox(
               height: 16,

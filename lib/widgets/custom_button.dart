@@ -25,9 +25,13 @@ class CustomButton extends StatelessWidget {
           backgroundColor: backgroundColor ?? const Color(0xFF009393),
         ),
         onPressed: () {},
-        child: Text(
-          text,
-          style: AppStyles.styleMedium16Poppins(context).copyWith(color: textColor),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerStart,
+          child: Text(
+            text,
+            style: AppStyles.styleMedium16Poppins(context).copyWith(color: textColor),
+          ),
         ),
         
       ),

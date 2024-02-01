@@ -16,8 +16,12 @@ class BeatsStudioCardDetalis extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Beats Studio 3 wireless Headphone',
-            style: AppStyles.styleMedium20Poppins(context)),
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerStart,
+          child: Text('Beats Studio 3 wireless Headphone',
+              style: AppStyles.styleMedium20Poppins(context)),
+        ),
         const SizedBox(
           height: 10,
         ),
@@ -27,8 +31,12 @@ class BeatsStudioCardDetalis extends StatelessWidget {
             const SizedBox(
               width: 14,
             ),
-            Text('(2000 + Reviews)',
-                style: AppStyles.styleRegular14Poppins(context)),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerStart,
+              child: Text('(2000 + Reviews)',
+                  style: AppStyles.styleRegular14Poppins(context)),
+            ),
           ],
         ),
         const SizedBox(
@@ -39,15 +47,17 @@ class BeatsStudioCardDetalis extends StatelessWidget {
           child: Text('Ergonomic ear cups with on-ear controls Up to 22 .',
               style: AppStyles.styleRegular12_5Poppins(context)),
         ),
-        const SizedBox(
-          height: 20,
+         SizedBox(
+          height: MediaQuery.sizeOf(context).width > 1049 ? 20 : null,
         ),
-        Text(r'Price $349.95',
-            style: AppStyles.styleMedium18Poppins(context)
-                .copyWith(color: const Color(0xFF009393))),
-        // const SizedBox(
-        //   height: 20,
-        // ),
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerStart,
+          child: Text(r'Price $349.95',
+              style: AppStyles.styleMedium18Poppins(context)
+                  .copyWith(color: const Color(0xFF009393))),
+        ),
+
         const Expanded(child: BeatsStudioCardColorRow()),
 
         const SizedBox(

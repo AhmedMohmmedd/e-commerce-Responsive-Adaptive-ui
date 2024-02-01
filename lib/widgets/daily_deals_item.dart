@@ -8,7 +8,43 @@ class DailyDealsItem extends StatelessWidget {
   final DailyDealsItemModel dailyDealsItemModel;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
+    return MediaQuery.sizeOf(context).width < 1010 ?
+    Row(
+      children: [
+        SvgPicture.asset(dailyDealsItemModel.image),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+             FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          dailyDealsItemModel.titel,
+          style: AppStyles.styleMedium12Poppins(context)
+              .copyWith(color: Colors.black),
+        ),
+      ),
+      FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          dailyDealsItemModel.subTitel,
+          style: AppStyles.styleMedium12Poppins(context),
+        ),
+      ),
+      FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          dailyDealsItemModel.price,
+          style: AppStyles.styleMedium12Poppins(context),
+        ),
+      ),
+          ],
+        )
+      ],
+    ) :
+     ListTile(
       title: FittedBox(
         fit: BoxFit.scaleDown,
         alignment: AlignmentDirectional.centerStart,

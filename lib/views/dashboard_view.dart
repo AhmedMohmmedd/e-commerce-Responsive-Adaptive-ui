@@ -1,6 +1,7 @@
 import 'package:e_commerce_responsive_ui/widgets/adabtive_layout_widget.dart';
 import 'package:e_commerce_responsive_ui/widgets/dashboard_desktop_layout.dart';
 import 'package:e_commerce_responsive_ui/widgets/headPhone_section..dart';
+import 'package:e_commerce_responsive_ui/widgets/soundix_section.dart';
 import 'package:flutter/material.dart';
 
 class DashBoardView extends StatefulWidget {
@@ -11,15 +12,24 @@ class DashBoardView extends StatefulWidget {
 }
 
 class _DashBoardViewState extends State<DashBoardView> {
+  GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     // SizeConfig.init(context);
     return Scaffold(
-      backgroundColor:const Color(0xFFFAFAFA),
+      key: scaffoldKey,
+      backgroundColor: const Color(0xFFFAFAFA),
+      appBar: MediaQuery.sizeOf(context).width < 1050
+          ? AppBar(
+              backgroundColor: const Color.fromARGB(255, 82, 80, 80),
+              elevation: 0,
+            )
+          : null,
+      drawer: const SoundixSection(),
       body: AdaptiveLayoutBulider(
           mobilelayout: (context) => const SizedBox(),
           tabletLayout: (context) => const HeadphoneSection(),
-          daskTopLayout: (context) =>const  DashboardDeskTopLayout()),
+          daskTopLayout: (context) => const DashboardDeskTopLayout()),
     );
   }
 }

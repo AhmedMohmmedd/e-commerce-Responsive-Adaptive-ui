@@ -52,8 +52,10 @@ class HeadphoneListViewItem extends StatelessWidget {
                   ),
                 ),
               ),
-              const SizedBox(
-                height: 20,
+             const Expanded(
+                child:  SizedBox(
+                  height: 20,
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -64,9 +66,12 @@ class HeadphoneListViewItem extends StatelessWidget {
                       const SizedBox(
                         width: 8,
                       ),
-                      Text(
-                        headphoneListViewItemModel.rate,
-                        style: AppStyles.styleMedium14Roboto(context),
+                      FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: Text(
+                          headphoneListViewItemModel.rate,
+                          style: AppStyles.styleMedium14Roboto(context),
+                        ),
                       ),
                     ],
                   ),
