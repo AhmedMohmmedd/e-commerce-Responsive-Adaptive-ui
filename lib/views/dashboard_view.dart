@@ -21,13 +21,13 @@ class _DashBoardViewState extends State<DashBoardView> {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: const Color(0xFFFAFAFA),
-      appBar: MediaQuery.sizeOf(context).width < 1050
+      appBar: MediaQuery.sizeOf(context).width < 800
           ? AppBar(
               backgroundColor: const Color.fromARGB(255, 82, 80, 80),
               elevation: 0,
             )
           : null,
-      drawer: const SoundixSection(),
+      drawer:MediaQuery.sizeOf(context).width < 800 ? const SoundixSection() : null,
       body: AdaptiveLayoutBulider(
           mobilelayout: (context) => const DashboardMobileLayout(),
           tabletLayout: (context) => const DashboardTabLetLayout(),

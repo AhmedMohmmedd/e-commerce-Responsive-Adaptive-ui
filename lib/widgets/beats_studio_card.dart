@@ -26,9 +26,10 @@ class BeatsStudioCard extends StatelessWidget {
           child: Row(
             children: [
               SvgPicture.asset(Assets.imagesBeatsSolo3Wireless),
-              const SizedBox(
-                width: 20,
-              ),
+               const Flexible(
+                    child: SizedBox(
+                  width: 40,
+                )),
              const Expanded(child:  BeatsStudioCardDetalis())
             ],
           ),

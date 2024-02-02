@@ -40,11 +40,10 @@ class BeatsStudioCardColorRow extends StatelessWidget {
             const CustomDot(
               color: Color(0xFF75E573),
             ),
-          const  Expanded(
-              child:  SizedBox(
-                width: 10,
-              ),
-            ),
+          // const  Expanded(
+          //     child:  SizedBox(
+          //     ),
+          //   ),
           
         
         Container(
